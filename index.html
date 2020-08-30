@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+                google.charts.load('current', {'packages':['corechart']});
+
+// Draw the pie chart and bar chart when Charts is loaded.
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'INCULCATED SKILLS');
+  data.addColumn('number', 'Rating out of 5');
+  data.addRows([
+    ['COMMUNICATION', 4.5],
+    ['PROBLEM SOLVING', 4],
+    ['DISCIPLINE', 4],
+    ['RESEARCH', 4],
+    ['CO-CURRICULAR', 3.8]
+  ]);
+
+
+  var barchart_options = {title:'INCULCATED SKILLS',
+                 width:1050,
+                 height:300,
+                 legend: 'none'};
+  var barchart = new google.visualization.BarChart(document.getElementById('barchart_div'));
+  barchart.draw(data, barchart_options);
+}
+        </script>
+ 
+        <title>PORTFOLIO</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">***(TIRTH SHAH)***</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu" >
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Achievements</a></li>
+                        <li class="nav__item"><a href="#foot" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="./dark_index.html" class="nav__link">
+                            <i class='bx bxs-sun'></i>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">TIRTH SHAH</span><br>CSE STUDENT<br><span style="font-size:small;">(PYTHON/ML/DS/AI Enthusiast)</span></h1>
+                    <a href="#foot" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/tirth-shah-30273014a" class="home__social-icon" target="__blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://medium.com/@tirthdhara108" class="home__social-icon" target="__blank"><i class='bx bxl-medium'  ></i></a>
+                    <a href="https://github.com/Tirth-1999" class="home__social-icon" target="__blank"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/IMG_20190217_085419_717-removebg-preview.png" alt="" style="padding-left: 80px;">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/first.png" alt="" >
+                    </div>
+                    
+                    <div>
+                        <center style="text-align: justify;">
+                        <h2 class="about__subtitle">I am Tirth Shah</h2>
+                        <p class="about__text">I am an eager and a quick learner. I have recently gained knowledge in the field of Data Science, Machine Learning, and Data Processing (Visualisation). I have gripped my skills through several coding challenges in Python.Aspire to work further in the field of Data Science and Python.</p> 
+                        <br>
+                        <table>
+                            <tr class="about__text">
+                                <th>
+                                    <p style="font-size: medium;"><a href="./assets/doc/resume.docx" target="__blank" >Resume&nbsp;(&nbsp;word*</a> </p>
+                                </th>
+                                <th>
+                                    <p style="font-size: medium;"><a href="./assets/doc/resume.pdf" target="__blank">&nbsp;/&nbsp;pdf*&nbsp;) </a></p>
+                                </th>
+                            </tr>
+                        </table> 
+                    </center>           
+                    </div> 
+                                                    
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <div>
+                        <center style="text-align: justify;">
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">#MOTIVATION : "THINGS WHICH ARE ASTHONISHING TO SPECTATE, WOULD ALWAYS BE PLEASURABLE TO WORK WITH."<br>
+                            I AM AMALGAMTION OF BOTH A GEEKY GUY (having all the theoritical knowledge) AND A PRACTICAL IMPLEMENTER.</p>
+                            </center>  
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-game skills__icon'></i>
+                                <span class="skills__name">PYTHON</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-game skills__icon'></i>
+                                <span class="skills__name">HTML/CSS/JS</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-game skills__icon' ></i>
+                                <span class="skills__name">C/Data Structure</span>
+                            </div>
+                            <div class="skills__bar skills__c">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-game skills__icon'></i>
+                                <span class="skills__name">C++</span>
+                            </div>
+                            <div class="skills__bar skills__cplus">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-game skills__icon'></i>
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__bar skills__java">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <img src="./assets/img/graph.png" class="skills__img" alt="">
+                        <h3 class="work__img" style="text-align: center;">INCULCATED SKILLS</h3>
+                    </div>
+                    </center>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Achievements</h2>
+                <br><br>
+
+                <div class="work__container bd-grid">
+                    
+                    <div class="work__img" style="border-radius: 10px; padding-top: 20px; background-color: #d6d6d6 ;">
+                        <h2 style="text-align: center; padding-top: 20px;color: black;padding-bottom: 35px; border-bottom: 4px solid blue;">Discipline Secretary</h2>
+                        <center style="padding-left: 20px;padding-right: 20px; text-align:justify; font-size: medium;">
+                            <ul style="list-style-type:disc; padding-left: 10px;padding-top: 30px;color: black;">
+                                <li>I was selected to be a part of SVIT STUDENT CENTRAL COMMITEE (SCC) for the year 2018-2019.</li>
+                                <li>Organized Annual Function "MALHAR'19". Led a team of 100+ students.</li>
+                                <li>Maintained the Decorum and Discipline in the College. </li>
+                                <li>Organised the Annual Sports meets where more than 1000 students participated ; and several other events like "Spandan"(College level) and "Xhitij"(Inter-College level). </li>
+                            </ul>
+                        </center>
+                    </div>
+                    <div class="work__img" style="border-radius: 10px; padding-top: 20px; background-color: #d6d6d6 ;">
+                        <h2 style="text-align: center; padding-top: 5px;color: black;padding-bottom: 15px; border-bottom: 4px solid blue;">Training and Placement Coordinator</h2>
+                        <center style="padding-left: 20px;padding-right: 20px; text-align:justify; font-size: medium;">
+                            <ul style="list-style-type:disc; padding-left: 10px;padding-top: 30px;color: black;">
+                                <li>I was selected to be a part of SVIT Computer Department T&P team from the year 2019.</li>
+                                <li>Conducted several Mock (Apptitude , Verbal, Technical) Test and Coding Test for the juniors so that they survive and succeed in the real compitetion. </li>
+                                <li>Organised more than 10 placement drives for several MNC companies such as Panasonic, TCS, etc.</li>
+                                <li>
+                                    Training students for more then 2 years.
+                                </li>
+
+                            </ul>
+                            <br><br>
+                        </center>
+                    </div>
+                    <div class="work__img" style="border-radius: 10px; padding-top: 20px; background-color: #d6d6d6 ;">
+                        <h2 style="text-align: center; padding-top: 20px;padding-bottom: 35px; color: black;border-bottom: 4px solid blue;">Vision Coordinator</h2>
+                        <center style="padding-left: 20px;padding-right: 20px; text-align:justify; font-size: medium;">
+                            <ul style="list-style-type:disc; padding-left: 10px;padding-top: 30px;color: black;">
+                                <li>I was selected to represent the Computer Department twice in a row (as Joint Coordinator in 2018, and Coordinator in 2019) and managed to get the victory in both the years.</li>
+                                <li>Vision is a platform where all the departments compete with each other to exhibit the recent technological advancements in their respective fields.</li>
+                                <li>I managed and supervised a team of 80+ students.</li>
+                                <li>Click here to know more 
+                                <a href="https://cevision.ml/" target="__blank" style="color: blue;"> @vision</a></li>
+                            </ul>
+                            <br><br>
+                        </center>
+                    </div>
+                    <div>
+                        <img src="assets/img/DSC_5854.JPG" alt="" class="work__img">
+                        <img src="assets/img/IMG-20180111-WA0029.jpg" alt="" style="padding-top: 20px;"class="work__img">
+                    </div>
+                    <div>
+                        <img src="assets/img/DSC_5830.JPG" alt=""class="work__img">
+                        <img src="assets/img/IMG_20180917_222440_098.jpg" alt=""class="work__img" style="padding-top:5px;">
+                    </div>
+                    <div>
+                        <img src="assets/img/IMG-20171225-WA0019.jpg" alt="" style="border-radius: 10px;">
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <br><br><br><br><br><br>
+        <!--===== FOOTER/CONTACT =====-->
+        <footer class="footer" id= "foot">
+            <p class="footer__title">Tirth Shah</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/tirth.shah.75098364" class="footer__icon" target="__blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/tcs_1110" class="footer__icon" target="__blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="tel:+917016409266" class="footer__icon" target="__blank"><i class='bx bxs-phone' ></i></a>
+                <a href="https://twitter.com/Tirthsh29132292" class="footer__icon" target="__blank"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p><a href="mailto:tirthdhara108@gmail.com" style="color : white"> Email: tirthdhara108@gmail.com</a> </p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
