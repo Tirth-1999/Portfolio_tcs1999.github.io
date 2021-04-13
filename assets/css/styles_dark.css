@@ -118,7 +118,7 @@ img{
   left: 0;
   z-index: var(--z-fixed);
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+  box-shadow: 0 1px 4px rgba(82, 192, 255, 0.15);
 }
 
 /*===== NAV =====*/
@@ -230,7 +230,7 @@ img{
   border-radius: .5rem;
 }
 .button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+  box-shadow: 0 10px 36px rgba(82, 192, 255, 0.15);
 }
 
 /* ===== ABOUT =====*/
@@ -269,7 +269,7 @@ img{
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 4px 25px rgba(82, 192, 255, 0.15);
 }
 .skills__icon{
   font-size: 2rem;
@@ -290,7 +290,7 @@ img{
   z-index: var(--z-back);
 }
 .skills__python{
-  width: 75%;
+  width: 85%;
 }
 .skills__css{
   width: 70%;
@@ -316,7 +316,7 @@ img{
   row-gap: 2rem;
 }
 .work__img{
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 4px 25px rgba(82, 192, 255, 0.15);
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -454,4 +454,41 @@ img{
   .home__img{
     right: 10%;
   }
+}
+.container {
+  position: relative
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+  opacity : 0.8;
+  border-radius : 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  bottom: 0%;
+  height: 25%;
+}
+
+.about__link{
+  color :var(--second-color)
+}
+.about__link:hover{
+  color :var(--first-color)
+}
+
+.about__text{
+  color:var(--second-color)
 }

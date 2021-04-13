@@ -70,6 +70,7 @@ a{
   text-decoration: none;
   color: black;
 }
+
 img{
   max-width: 100%;
   height: auto;
@@ -290,7 +291,7 @@ img{
   z-index: var(--z-back);
 }
 .skills__python{
-  width: 75%;
+  width: 85%;
 }
 .skills__css{
   width: 70%;
@@ -316,9 +317,12 @@ img{
   row-gap: 2rem;
 }
 .work__img{
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 4px 25px rgba(255, 255, 255, 0.15);
   border-radius: .5rem;
   overflow: hidden;
+  height:100%;
+  width: 100%;
+  object-fit: cover;
 }
 .work__img img{
   transition: 1s;
@@ -454,4 +458,36 @@ img{
   .home__img{
     right: 10%;
   }
+}
+
+.container {
+  position: relative
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+  right: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 80%;
+  height: 0%;
+  transition: .3s ease;
+  opacity : 0.9;
+  border-radius : 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  bottom: 0%;
+  height: 20%;
+  left: 10%;
+}
+
+.about__link:hover{
+  color :var(--first-color)
 }
