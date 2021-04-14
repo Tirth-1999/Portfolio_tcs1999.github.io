@@ -326,7 +326,7 @@ img{
 }
 .work__img img{
   transition: 1s;
-  cursor: pointer;
+  cursor: progress;
 }
 .work__img img:hover{
   transform: scale(1.1);
