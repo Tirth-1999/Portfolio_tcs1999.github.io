@@ -8,36 +8,8 @@
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-                google.charts.load('current', {'packages':['corechart']});
-
-// Draw the pie chart and bar chart when Charts is loaded.
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
-
-  var data = new google.visualization.DataTable();
-  data.addColumn('string', 'INCULCATED SKILLS');
-  data.addColumn('number', 'Rating out of 5');
-  data.addRows([
-    ['COMMUNICATION', 4.5],
-    ['PROBLEM SOLVING', 4],
-    ['DISCIPLINE', 4],
-    ['RESEARCH', 4],
-    ['CO-CURRICULAR', 3.5]
-  ]);
-
-
-  var barchart_options = {title:'INCULCATED SKILLS',
-                 width:1050,
-                 height:300,
-                 legend: 'none'};
-  var barchart = new google.visualization.BarChart(document.getElementById('barchart_div'));
-  barchart.draw(data, barchart_options);
-}
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
         </script>
- 
         <title>PORTFOLIO</title>
     </head>
     <body>
@@ -54,9 +26,9 @@ function drawChart() {
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Achievements</a></li>
-                        <li class="nav__item"><a href="#foot" class="nav__link">Contact</a></li>
                         <li class="nav__item"><a href="#certification" 
                         class="nav__link" >Certification</a></li>
+                        <li class="nav__item"><a href="#foot" class="nav__link">Contact</a></li>
                         <li class="nav__item"><a href="./dark_index.html" class="nav__link">
                             <i class='bx bxs-sun'></i>
                         </a></li>
@@ -467,10 +439,11 @@ function drawChart() {
                     </div>
                 </div>
             </section>
+
+            <!-- ======= CERTIFICATION & COURSES ======= -->
+
         </main>
         <br><br><br><br><br><br>
-
-        <!-- ======= Certification bar ======= -->
 
         <!--===== FOOTER/CONTACT =====-->
         <footer class="footer" id= "foot">
@@ -483,7 +456,6 @@ function drawChart() {
             </div>
             <p><a href="mailto:tirthdhara108@gmail.com" style="color : white"> Email: tirthdhara108@gmail.com</a> </p>
         </footer>
-
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
