@@ -498,7 +498,7 @@ img{
   color:var(--second-color)
 }
 .carousel{
-  width:60%;
+  width:100%;
   
 }
 .carousel-cell {
@@ -512,7 +512,6 @@ img{
 
 .carousel-cell img{
   width: 400px;
-  height: 300px;
 }
 /* cell number */
 .carousel-cell:before {
