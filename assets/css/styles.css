@@ -494,7 +494,7 @@ img{
 }
 
 .carousel{
-  width:60%;
+  width:100%;
   
 }
 .carousel-cell {
@@ -504,6 +504,10 @@ img{
   color:var(--second-color);
   font-size:larger;
   font-weight: bolder;
+}
+.carousel-cell img{
+  width: 400px;
+  height: 300px;
 }
 
 /* cell number */

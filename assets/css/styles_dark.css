@@ -510,6 +510,10 @@ img{
   font-weight: bolder;
 }
 
+.carousel-cell img{
+  width: 400px;
+  height: 300px;
+}
 /* cell number */
 .carousel-cell:before {
     display: block;
