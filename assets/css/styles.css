@@ -434,7 +434,7 @@ img{
     align-items: center;
     text-align: initial;
   }
-  .about__img img{
+  .about__img {
     width: 300px;
   }
   .work__container{
@@ -458,6 +458,7 @@ img{
   .home__img{
     right: 10%;
   }
+  
 }
 
 .container {
@@ -490,4 +491,32 @@ img{
 
 .about__link:hover{
   color :var(--first-color)
+}
+
+.carousel{
+  width:60%;
+  
+}
+.carousel-cell {
+  width: 100%;
+}
+.carousel-cell a{
+  color:var(--second-color);
+  font-size:larger;
+  font-weight: bolder;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+}
+
+@media all and (min-width: 770px) {
+  .deskContent {display:block;}
+  .phoneContent {display:none;}
+}
+
+@media all and (max-width: 768px) {
+  .deskContent {display:none;}
+  .phoneContent {display:block;}
 }

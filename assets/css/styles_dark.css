@@ -319,13 +319,16 @@ img{
   box-shadow: 0 4px 25px rgba(82, 192, 255, 0.15);
   border-radius: .5rem;
   overflow: hidden;
+  height:100%;
+  width: 100%;
+  object-fit: cover;
 }
 .work__img img{
   transition: 1s;
-  cursor: pointer;
+  cursor: progress;
 }
 .work__img img:hover{
-  transform: scale(1.1);
+  transform: scale(2);
 }
 
 /* ===== CONTACT =====*/
@@ -430,7 +433,7 @@ img{
     align-items: center;
     text-align: initial;
   }
-  .about__img img{
+  .about__img{
     width: 300px;
   }
   .work__container{
@@ -461,15 +464,15 @@ img{
 
 .overlay {
   position: absolute;
-  bottom: 100%;
-  left: 0;
+  bottom: 0%;
+  left: 10%;
   right: 0;
   background-color: #000000;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   height: 0%;
-  transition: .5s ease;
-  opacity : 0.8;
+  transition: .3s ease;
+  opacity : 0.9;
   border-radius : 10px;
   display: flex;
   align-items: center;
@@ -479,16 +482,45 @@ img{
 
 .container:hover .overlay {
   bottom: 0%;
-  height: 25%;
+  height: 20%;
+  left: 10%;
 }
 
 .about__link{
   color :var(--second-color)
 }
+
 .about__link:hover{
   color :var(--first-color)
 }
 
 .about__text{
   color:var(--second-color)
+}
+.carousel{
+  width:60%;
+  
+}
+.carousel-cell {
+  width: 100%;
+}
+.carousel-cell a{
+  color:#202020;
+  font-size:larger;
+  font-weight: bolder;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+}
+
+@media all and (min-width: 770px) {
+  .deskContent {display:block;}
+  .phoneContent {display:none;}
+}
+
+@media all and (max-width: 768px) {
+  .deskContent {display:none;}
+  .phoneContent {display:block;}
 }

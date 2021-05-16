@@ -56,6 +56,58 @@ sr.reveal('.work__img',{});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
+const data = {
+    labels: [
+      'Co-Curricular',
+      'Research',
+      'Discipline',
+      'Problem Solving',
+      'Communication'
+    ],
+    datasets: [{
+      label: 'Inculcated Skill',
+      data: [80,85,85,95,90],
+      backgroundColor: [
+        'rgba(31,78,121,0.5)',
+        'rgba(46,117,182,0.5)',
+        'rgba(157,195,230,0.5)',
+        'rgba(189,215,238,0.5)',
+        'rgba(222,235,247,0.5)'
+      ],
+      borderColor: [
+        'rgba(31,78,121,0.5)',
+        'rgba(46,117,182,0.5)',
+        'rgba(157,195,230,0.5)',
+        'rgba(189,215,238,0.5)',
+        'rgba(222,235,247,0.5)'
+    ],
 
+    }]
+  };
+    // </block:setup>
+    
+    // <block:config:0>
+        const config = {
+            type: 'polarArea',
+            data: data,
 
+            options: {
+              scales: {
+                r: {
+                  ticks: {
+                    color: '#2466f3',
+                  },
+                  grid: {
+                    color: 'rgb(0,0,0)',
+                  }
+                }
+              }
+            }
+          };
+    // </block:config>
+    
+    module.exports = {
+    actions: [],
+    config: config,
+    };
 
