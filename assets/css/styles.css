@@ -87,14 +87,14 @@ img{
   text-align: center;
 }
 .section-title::after{
-  position: absolute;
+  position:absolute;
   content: "";
   width: 64px;
   height: 0.18rem;
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  bottom: 0px;
   background-color: var(--first-color);
 }
 .section{
