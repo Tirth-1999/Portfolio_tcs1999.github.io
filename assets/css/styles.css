@@ -244,6 +244,8 @@ img{
 }
 .about__img{
   justify-self: center;
+  width: 200px;
+  height: 200px;
 }
 .about__img img{
   width: 200px;
