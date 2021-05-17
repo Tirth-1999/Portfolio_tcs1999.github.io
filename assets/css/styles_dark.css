@@ -196,6 +196,7 @@ img{
 .home__title{
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  color:white
 }
 .home__title-color{
   color: var(--first-color);
@@ -238,8 +239,10 @@ img{
   row-gap: 2rem;
   text-align: center;
 }
+
 .about__subtitle{
   margin-bottom: var(--mb-2);
+  color:white;
 }
 .about__img{
   justify-self: center;
@@ -279,6 +282,7 @@ img{
 .skills__names{
   display: flex;
   align-items: center;
+  color:white;
 }
 .skills__bar{
   position: absolute;
@@ -495,7 +499,7 @@ img{
 }
 
 .about__text{
-  color:var(--second-color)
+  color:white
 }
 .carousel{
   width:100%;
