@@ -55,7 +55,7 @@ if ch == "Y":
     file1 = open(r"index.html","rt")
     text1 = file1.read()
     # print(text1[text1.index("<!-- #unique -->") + 16])
-    text1 = text1[:text1.index("<!-- #unique -->") + 16] + f'\n\t\t\t\t\t\t<div class="carousel-cell">\n\t\t\t    \t\t\t<img class="w3-image" src="assets\img\Important\Certificate_{str(int(last_number)+1)}.jpg">\n\t\t\t\t\t\t</div>' +text1[text1.index("<!-- #unique -->") + 16:]
+    text1 = text1[:text1.index("<!-- #unique -->") + 16] + f'\n\t\t\t\t\t\t<div class="carousel-cell">\n\t\t\t    \t\t\t<img class="w3-image" src="assets\img\Important\Certificate_{str(int(last_number))}.jpg">\n\t\t\t\t\t\t</div>' +text1[text1.index("<!-- #unique -->") + 16:]
     # print("*************************************")
     # print(text1)
     # print("*************************************")
@@ -64,7 +64,7 @@ if ch == "Y":
     file2 = open(r"dark_index.html")
     text2 = file2.read()
     # print(text2[text2.index("<!-- #unique -->") + 16])
-    text2 = text2[:text2.index("<!-- #unique -->") + 16] + f'\n\t\t\t\t\t\t<div class="carousel-cell">\n\t\t\t    \t\t\t<img class="w3-image" src="assets\img\Important\Certificate_{str(int(last_number)+1)}.jpg">\n\t\t\t\t\t\t</div>' +text2[text2.index("<!-- #unique -->") + 16:]
+    text2 = text2[:text2.index("<!-- #unique -->") + 16] + f'\n\t\t\t\t\t\t<div class="carousel-cell">\n\t\t\t    \t\t\t<img class="w3-image" src="assets\img\Important\Certificate_{str(int(last_number))}.jpg">\n\t\t\t\t\t\t</div>' +text2[text2.index("<!-- #unique -->") + 16:]
     # print("*************************************")
     # print(text2)
     # print("*************************************")
