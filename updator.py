@@ -80,3 +80,10 @@ if ch == "Y":
     file2 = open(r"dark_index.html",'w')
     file2.write(text2)
     file2.close()
+
+print("Do you wanna open Github Type 'Y' or 'N'" )
+ch = input()
+if ch == 'Y' or ch == 'y':
+    os.system("github")
+else:
+    print("Thank you for using my services.")
