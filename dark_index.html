@@ -9,6 +9,7 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
         </script>
+        <script src="assets\js\typed.js"></script>
         <link rel="stylesheet" href="assets\css\flick.css">
         <title>PORTFOLIO</title>
     </head>
@@ -44,7 +45,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">TIRTH SHAH</span><br>CSE STUDENT<br><span style="font-size:small;">(PYTHON/ML/DS/AI Enthusiast)</span></h1>
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">TIRTH SHAH</span><br>CSE STUDENT<br><span style="font-size:30px; color:#00a2ff" id="typed"></span></h1>
                     <a href="#foot" class="button">Contact</a>
                 </div>
 
@@ -624,6 +625,19 @@
                         </div>
                         <div class="carousel-cell">
                             <div style="background:#4070f4;color:white;border-radius:10px;padding: 40px; height:300px ;width: 80%;">
+                                <h2>Market Basket Analysis</h2>
+                                <br>
+                                <div class="deskContent">"Often wonder how you come to a mall with a strict budget but always end up breaking it, cause you thought it’s a great deal?"
+                                Find more in the Article about MBA
+                                </div>
+                                <div class="phoneContent"></div>
+                                <br>
+                                <a href="https://github.com/Tirth-1999/Python-Projects" target="_blank">Github Link 🔗</a>
+                                <a href="https://tirthshah1999.medium.com/market-basket-analysis-1c38613fdd6b" target="_blank">Medium Link 🔗</a>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div style="background:#4070f4;color:white;border-radius:10px;padding: 40px; height:300px ;width: 80%;">
                                 <h2>Time Table Story</h2>
                                 <br>
                                 <div class="deskContent">This Project constitute of tracking lecture Links across all the subject so that it doesn't become hectice for students and teacher find the correct link.
@@ -657,6 +671,18 @@
                                 <div class="phoneContent"></div>
                                 <br>
                                 <a href="https://github.com/Tirth-1999/Python-Projects" target="_blank">Github Link 🔗</a>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div style="background:#4070f4;color:white;border-radius:10px;padding: 40px; height:300px ;width: 80%;">
+                                <h2>Portfolio</h2>
+                                <br>
+                                <div class="deskContent">Want to find why making a portfolio is important for you. Find more in the Medium article
+                                </div>
+                                <div class="phoneContent"></div>
+                                <br>
+                                <a href="https://github.com/Tirth-1999/Python-Projects" target="_blank">Github Link 🔗</a>
+                                <a href="https://tirthshah1999.medium.com/all-the-ws-h-s-about-a-website-portfolio-7ac103885158" target="_blank">Medium Link 🔗</a>
                             </div>
                         </div>
                     </div>
@@ -697,6 +723,14 @@
               document.getElementById('myChart'),
               config
             );
+        </script>
+        <script>
+            var typed = new Typed('#typed',{
+                strings:["Python Developer","Data Science", "Machine Learning", "Business Analyst","Microsoft Azure","Web Developer"],
+                backSpeed: 100,
+                typeSpeed: 100,
+                loop: true
+              });
         </script>
     </body>
 </html>
