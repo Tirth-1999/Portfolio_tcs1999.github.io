@@ -86,8 +86,8 @@ https://flickity.metafizzy.co
     transform: translateY(-50%);
   }
   
-  .flickity-prev-next-button.previous { left: 80px; }
-  .flickity-prev-next-button.next { right: 80px; }
+  .flickity-prev-next-button.previous { left: 20px; }
+  .flickity-prev-next-button.next { right: 20px; }
   /* right to left */
   .flickity-rtl .flickity-prev-next-button.previous {
     left: auto;
