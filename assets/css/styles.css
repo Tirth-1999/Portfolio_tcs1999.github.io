@@ -492,8 +492,11 @@ img{
 }
 
 .about__link:hover{
-  color :var(--first-color)
+  color :var(--first-color);
+  text-decoration:none;
+  border-bottom:1px solid #ccc;
 }
+
 
 .carousel{
   width:100%;
