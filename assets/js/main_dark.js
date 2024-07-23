@@ -95,7 +95,7 @@ const data = {
                 r: {
                   ticks: {
                     color: '#999999',
-                    backdropColor : '#202020'
+                    backdropColor : '#0f0f0f'
                   },
                   grid: {
                     color: 'rgb(0,0,0)',

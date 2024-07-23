@@ -8,8 +8,8 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #00a2ff;
-  --second-color: #2466f3;
+  --first-color: #730000;
+  --second-color: #400000;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -118,7 +118,7 @@ img{
   left: 0;
   z-index: var(--z-fixed);
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(82, 192, 255, 0.15);
+  box-shadow: 0 1px 4px rgba(255, 82, 82, 0.15);
 }
 
 /*===== NAV =====*/
@@ -163,11 +163,15 @@ img{
 .nav__logo{
   color: var(--second-color);
 }
+
+
+
 .nav__toggle{
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 
 /*Active menu*/
 .active::after{
@@ -209,7 +213,7 @@ img{
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: #fff;
 }
 .home__social-icon:hover{
   color: var(--first-color);
@@ -224,14 +228,14 @@ img{
 /*BUTTONS*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: #260000;
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
 .button:hover{
-  box-shadow: 0 10px 36px rgba(82, 192, 255, 0.15);
+  box-shadow: 0 1px 4px rgba(255, 82, 82, 0.15);
 }
 
 /* ===== ABOUT =====*/
@@ -274,7 +278,7 @@ img{
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(82, 192, 255, 0.15);
+  box-shadow: 0 1px 4px rgba(255, 82, 82, 0.15);
 }
 .skills__icon{
   font-size: 2rem;
@@ -295,6 +299,11 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
+
+.skills__percentage{
+  color: #fff;
+}
+
 .skills__python{
   width: 85%;
 }
@@ -322,7 +331,7 @@ img{
   row-gap: 2rem;
 }
 .work__img{
-  box-shadow: 0 4px 25px rgba(82, 192, 255, 0.15);
+  box-shadow: 0 1px 4px rgba(255, 82, 82, 0.15);
   border-radius: .5rem;
   overflow: hidden;
   height:100%;
@@ -375,8 +384,12 @@ img{
 .footer__icon{
   font-size: 1.5rem;
   color: #fff;
-  margin: 0 var(--mb-2)
+  margin: 0 var(--mb-2);
 }
+.footer__icon:hover{
+  color :rgba(0, 0, 0, 0.459)
+}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
@@ -493,11 +506,13 @@ img{
 }
 
 .about__link{
-  color :var(--second-color)
+  color :#FFF
 }
 
 .about__link:hover{
-  color :var(--first-color)
+  color :#a30202;
+  text-decoration:none;
+  border-bottom:1px solid #ccc;
 }
 
 .about__text{
