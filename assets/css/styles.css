@@ -8,7 +8,7 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #4070F4;
+  --first-color: #800000;
   --second-color: #0E2431;
 }
 
@@ -162,7 +162,7 @@ img{
   background-color: var(--first-color);
 }
 .nav__logo{
-  color: var(--second-color);
+  color: var(--first-color);
 }
 .nav__toggle{
   color: var(--second-color);
@@ -356,7 +356,7 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
+  background-color: #800000;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
