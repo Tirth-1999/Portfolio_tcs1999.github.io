@@ -6,10 +6,10 @@
   --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Colors =====*/
 :root{
-  --first-color: #730000;
-  --second-color: #400000;
+  --first-color: #ffaa00;
+  --second-color: #2f000b;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -228,14 +228,14 @@ img{
 /*BUTTONS*/
 .button{
   display: inline-block;
-  background-color: #260000;
+  background-color:#460110;
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
 .button:hover{
-  box-shadow: 0 1px 4px rgba(255, 82, 82, 0.15);
+  box-shadow: 0 3px 4px rgba(255, 82, 82, 0.15);
 }
 
 /* ===== ABOUT =====*/
@@ -387,7 +387,7 @@ img{
   margin: 0 var(--mb-2);
 }
 .footer__icon:hover{
-  color :rgba(0, 0, 0, 0.459)
+  color :#ffaa00;
 }
 
 
@@ -519,7 +519,7 @@ img{
   color:white
 }
 .carousel{
-  width:100%;
+  width:80%;
   
 }
 .carousel-cell {
